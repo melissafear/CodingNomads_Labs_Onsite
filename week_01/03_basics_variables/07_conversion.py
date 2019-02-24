@@ -11,3 +11,9 @@ Output should read like - "27.4 degrees celsius = 81.32 degrees fahrenheit"
 NOTE: if you get an error, look up what input() returns!
 
 '''
+
+temp_c = float(input("please enter a temperature in celcius: "))
+
+temp_f = temp_c * 1.8 + 32
+
+print(f"{temp_c} degrees celcius = {temp_f} degrees fahrenheit")

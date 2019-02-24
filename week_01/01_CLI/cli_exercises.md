@@ -35,3 +35,36 @@ to house materials for the course.
 - Create a file hello.txt with the text "how?!", then append the text
     to another file called my_file.txt
 - Overwrite the content of my_file.txt with "tell me"
+
+
+
+THMB:labs_onsite melissa$ cd ~
+THMB:~ melissa$ pwd
+/Users/melissa
+THMB:~ melissa$ mkdir CodingNomads
+THMB:~ melissa$ cd CodingNomads/
+THMB:CodingNomads melissa$ mkdir cli_testing
+THMB:CodingNomads melissa$ ls
+cli_testing
+THMB:CodingNomads melissa$ cd cli_testing/
+THMB:cli_testing melissa$ touch file1.txt, file2.txt file3.txt
+THMB:cli_testing melissa$ ls
+file1.txt,	file2.txt	file3.txt
+THMB:cli_testing melissa$ mv file1.txt, file01.txt
+THMB:cli_testing melissa$ ls
+file01.txt	file2.txt	file3.txt
+THMB:cli_testing melissa$ mkdir newerfolder
+THMB:cli_testing melissa$ mv file01.txt /Users/melissa/CodingNomads/cli_testing/newerfolder
+THMB:cli_testing melissa$ cp file2.txt /Users/melissa/CodingNomads/cli_testing/newerfolder
+THMB:cli_testing melissa$ ls
+file2.txt	file3.txt	newerfolder
+THMB:cli_testing melissa$ cd newerfolder
+THMB:newerfolder melissa$ ls
+file01.txt	file2.txt
+THMB:newerfolder melissa$ cd ..
+THMB:cli_testing melissa$ ls
+file2.txt	file3.txt	newerfolder
+THMB:cli_testing melissa$ rm file3.txt
+THMB:cli_testing melissa$ rm -r newerfolder
+THMB:cli_testing melissa$ ls
+file2.txt

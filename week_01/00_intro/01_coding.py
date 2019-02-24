@@ -6,4 +6,4 @@ instead of writing it 3 times.
 Time for co-co-co-ding.
 
 '''
-print("co-"*3 + "ding")
+print("co-"*3 + "ist = {ding")
