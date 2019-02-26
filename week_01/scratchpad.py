@@ -1,11 +1,10 @@
-mylist = [1, 2, 3, 4, 42]
+glossary = {"float":"number with decimals", "integer":"number with no decimals", "string":"a bunch of characters", "list":"a bunch of things", "dictionary":"this thing"}
 
-print(mylist[:])
-print(mylist[::])
-print(mylist[::-1])
+for items in glossary: #(defaults to .keys()
+    print(items)
 
-a:b:c
+for items in glossary.items():
+    print(items)
 
-a is first range (no number defaults from start of list)
-b is second range  (no number defaults to end of list)
-c is steps and direction -2 every second item from right to left
+for k,v in glossary.items():
+    print(k, v)
