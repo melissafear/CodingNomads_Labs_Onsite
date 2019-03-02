@@ -12,28 +12,24 @@ to a tuple with the number 0.
 
 '''
 
-my_list = [1, 2, 3, 5, 9, 12, 15, 97, 34]
+
+
+my_list = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
 sorted_list = sorted(my_list)
 
-#print(sorted_list)
+#if list is an uneven number append a 0
+length =  len(sorted_list)
+if length % 2 == 1:
+    sorted_list.append(0)
+length =  len(sorted_list)
 
-#for item in sorted_list:
-#    print(item)
+new_list = []
+for i in range(0,length,2 ):
+    newtuple = sorted_list[i], sorted_list[i+1]
+    new_list.append(newtuple)
 
-
-if len(sorted_list) % != 0:
-    sorted_list.append
-
-
-for i in range(0, len(sorted_list), 2):
-
-    print(sorted_list[i+1])
-
-    #if list is an uneven number append a 0
-
-    tuplepair = (thing[i], thing2[i+1])
-
+print(new_list)
 
 
 

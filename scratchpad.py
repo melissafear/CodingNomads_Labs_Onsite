@@ -1,23 +1,5 @@
-class Ingredient:
-
-    name = "matrtin"
-    amount = 7
-    def __init__(self, amount):
-        self.amount = amount
-
-
-a= Ingredient(4)
-b= Ingredient(10)
-
-print(a.name)
-print(b.name)
-print(b.amount)
-
-
-thing = Ingredient(5)
-
-thing.amount
-
-
-
-
+for i in range(1, 11):
+    for j in range(1, 11):
+        print("{:2d}".format(i * j), end=" ")
+        #remember this is a method to print a table ^
+    print()

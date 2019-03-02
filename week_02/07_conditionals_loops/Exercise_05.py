@@ -7,3 +7,18 @@ Take two numbers from the user, an upper and lower bound. Using a loop, calculat
 		The sum is: 5050
 		The average is: 50.5
 '''
+
+
+#add
+
+lower = int(input("type a number "))
+upper = int(input ("type a higher number ")) + 1
+total = 0
+
+for num in range(lower, upper):
+    total += num
+
+count = upper / lower
+average = total / count
+
+print(total, average)

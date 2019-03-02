@@ -29,3 +29,4 @@ new_list= sorted(dict_.items(), key=itemgetter(1), reverse=True)
 
 for tup in new_list:
     print(tup[0], end = ", ")
+    print(type(tup))
