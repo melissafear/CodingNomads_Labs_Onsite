@@ -9,7 +9,6 @@ Take two numbers from the user, an upper and lower bound. Using a loop, calculat
 '''
 
 
-#add
 
 lower = int(input("type a number "))
 upper = int(input ("type a higher number ")) + 1
