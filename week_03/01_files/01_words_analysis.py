@@ -7,3 +7,12 @@ Write a script that reads in the words from the words.txt file and finds and pri
 
 
 '''
+with open('words.txt', 'r') as fileobject:
+    words = fileobject.read()
+wordlist = words.split()
+
+
+print(sorted(wordlist, key=len))
+print(min(wordlist, key=len))
+print(max(wordlist, key=len))
+print(len(wordlist))
