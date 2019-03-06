@@ -11,8 +11,19 @@ with open('words.txt', 'r') as fileobject:
     words = fileobject.read()
 wordlist = words.split()
 
+min_length = len(min(wordlist, key=len))
+max_length = len(max(wordlist, key=len))
 
-print(sorted(wordlist, key=len))
-print(min(wordlist, key=len))
-print(max(wordlist, key=len))
-print(len(wordlist))
+print(max_length)
+
+for word in wordlist:
+    if len(word) == min_length:
+        print(word)
+
+for word in wordlist:
+    if len(word) == max_length:
+        print(word)
+
+
+
+print(f"\n{len(wordlist)}")

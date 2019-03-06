@@ -1,5 +1,0 @@
-In python you can do math
-In python you can make functions
-In python you can create classes
-in python you can display text
-
