@@ -15,3 +15,22 @@ Source: Read through the "Files" chapter in Think Python 2e:
 http://greenteapress.com/thinkpython2/html/thinkpython2015.html
 
 '''
+#File Setup
+with open('file_with_words.txt', 'w') as file_object:
+    file_object.write(f"she sells seashells by the sea shore")
+
+#-------------------------------------------------
+
+def sed(pattern, replacement, file1, file2):
+
+    with open(file1, 'r') as file_object:
+        text = file_object.read()
+
+    changed_text = text.replace(pattern, replacement)
+
+    with open(file2, 'w') as file_object2:
+        file_object2.write(changed_text)
+
+
+sed("sh", "sc", "file_with_words.txt", "file_with_altered_words.txt")
+
