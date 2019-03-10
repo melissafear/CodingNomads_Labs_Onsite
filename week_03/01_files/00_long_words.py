@@ -15,4 +15,3 @@ new_words = words.split()
 for word in new_words:
     if len(word) > 20:
         print(word)
-

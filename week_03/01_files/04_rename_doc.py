@@ -41,6 +41,5 @@ def sed(pattern, replacement, file1, file2):
         pass #whats a good exception for this?
     #https://docs.python.org/3/library/exceptions.html#bltin-exceptions
 
-
 sed("sh", "sc", "file_with_words.txt", "file_with_altered_wordss.txt")
 

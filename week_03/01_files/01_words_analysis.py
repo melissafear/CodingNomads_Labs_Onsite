@@ -25,5 +25,4 @@ for word in wordlist:
         print(word)
 
 
-
 print(f"\n{len(wordlist)}")
