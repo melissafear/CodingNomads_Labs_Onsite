@@ -19,14 +19,18 @@ so to make it a bit harder, here are some rules to follow.
 4) Put a blank line between each verse of the song.
 
 '''
-vessel1 = "bottles"
-vessel2 = "bottles"
+vessel="bottles"
+
 for i in range(100,0,-1):
-    if i == 2:
-        vessel1 = "bottle"
+
+    print(f"{i} {vessel} of beer on the wall,\r\n{i} {vessel} of beer.\r\nTake one down and pass it around, ")
+
+    i=i-1
     if i == 1:
-        print(f"{i} {vessel1} of beer on the wall, {i} bottles of beer. Take one down and pass it around, {i-1} {vessel2} of beer on the wall.\r\n")
-        else:
-        print(f"{i} {vessel1} of beer on the wall, {i} bottles of beer. Take one down and pass it around, {i-1} {vessel2} of beer on the wall.\r\n")
+        vessel = "bottle"
+    else:
+        vessel = "bottles"
+
+    print(f"{i} {vessel} of beer on the wall.\r\n")
 
 #Not complete

@@ -23,14 +23,24 @@ with open('file_with_words.txt', 'w') as file_object:
 
 def sed(pattern, replacement, file1, file2):
 
-    with open(file1, 'r') as file_object:
-        text = file_object.read()
+    try:
+        with open(file1, 'r') as file_object:
+            text = file_object.read()
 
-    changed_text = text.replace(pattern, replacement)
+    except FileNotFoundError:
+            print(f"{file1} not found")
 
-    with open(file2, 'w') as file_object2:
-        file_object2.write(changed_text)
+    else:
+        changed_text = text.replace(pattern, replacement)
+
+    try:
+        with open(file2, 'w') as file_object2:
+          file_object2.write(changed_text)
+
+    except: #FileNotFoundError:
+        pass #whats a good exception for this?
+    #https://docs.python.org/3/library/exceptions.html#bltin-exceptions
 
 
-sed("sh", "sc", "file_with_words.txt", "file_with_altered_words.txt")
+sed("sh", "sc", "file_with_words.txt", "file_with_altered_wordss.txt")
 

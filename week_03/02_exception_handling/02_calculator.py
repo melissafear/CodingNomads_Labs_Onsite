@@ -8,3 +8,27 @@ the script should handle:
 Test it and make sure it does not crash when you enter incorrect values.
 
 '''
+
+
+try:
+    dividend = int(input("enter dividend: "))
+
+except ValueError as ve:
+    print(f"Please use numerical numbers")
+
+else:
+    try:
+        divisor = int(input("enter divisor"))
+
+    except ValueError as ve:
+        print(f"Please use numerical numbers: ")
+
+    else:
+        try:
+            print(dividend / divisor)
+
+        except ZeroDivisionError as zde:
+            print(f"You can't divide by zero!!")
+
+
+
