@@ -15,3 +15,10 @@ Source: Read through the "Files" chapter in Think Python 2e:
 http://greenteapress.com/thinkpython2/html/thinkpython2015.html
 
 '''
+
+import angram_sets as a
+#from anagram_sets import *
+
+print(a.all_anagrams("words.txt"))
+
+#Not done
