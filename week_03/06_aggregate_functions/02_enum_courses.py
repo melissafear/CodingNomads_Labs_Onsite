@@ -11,3 +11,12 @@ for i in range(len(courses)):
 '''
 
 classes = ['Intro', 'Intermediate', 'Advanced', 'Epic Hero']
+
+for i, z in enumerate(classes):
+    print(f"{i}: {z} python")
+
+for i in range(len(classes)):
+    print(f"{i}: {classes[i]}")
+
+
+print(list(enumerate(classes, 1)))
