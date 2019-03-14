@@ -1,0 +1,21 @@
+import requests
+
+url = "https://www.tripadvisor.co.uk/ShowUserReviews-g297701-d8563593-r519115639-Sage-Ubud_Gianyar_Regency_Bali.html"
+
+res = requests.get(url)
+
+with open('sagereview_TA.html', 'w', encoding='utf-8') as fout:
+    fout.write(res.text)
+
+
+requests.get('https://api.github.com/user', auth=('melissafear', "kkkk"))
+
+
+<input id="wpName1" name="wpName" size="20" value="Melissafear" class="loginText mw-ui-input"
+placeholder="Enter your username" tabindex="1" required="">
+
+
+<input id="wpName1" name="wpName" size="20" value="Melissafear" class="loginText mw-ui-input"
+placeholder="Enter your username" tabindex="1" required="">
+
+<input name="wpLoginToken" type="hidden" value="415ea79e2a671f8349978f47ecec14165c889394+\">

@@ -4,7 +4,7 @@ Then iterate over the generator object and print out each item.
 
 '''
 
-gen = (x for x in range(20))
+gen = (x for x in range(5))
 print(gen)
 
 for i in gen:

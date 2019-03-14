@@ -9,3 +9,8 @@ Also include a test that does not pass.
 '''
 
 
+def add(val1, val2):
+    total = val1 + val2
+    return total
+
+

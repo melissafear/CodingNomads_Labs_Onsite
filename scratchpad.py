@@ -1,13 +1,20 @@
-books = [book1.txt, book2.txt]
+# #reverse the list
+#
+# list_ = [8, 6, 2, 5]
+# temp = 0
+#
+# for i in range(len(list_)):
+#     print(i)
+#
+#
+# for i in range(len(list_)):
+#     print(i)
+#
+#
+#
+#
+# list_.
+# # list_.append()
+# list_.insert()
 
-for book in books:
-    try:
-        with open(book, "r") as fin:
-            content = fin.read()
-    except FileNotFoundError as fnf:
-        print(fnf)
-    except PermissionError as err:
-        print(err)
-    else:
-        print(first_char)
-
+-28%
