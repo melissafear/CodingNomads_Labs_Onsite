@@ -1,20 +1,10 @@
-# #reverse the list
-#
-# list_ = [8, 6, 2, 5]
-# temp = 0
-#
-# for i in range(len(list_)):
-#     print(i)
-#
-#
-# for i in range(len(list_)):
-#     print(i)
-#
-#
-#
-#
-# list_.
-# # list_.append()
-# list_.insert()
+#reverse the list
 
--28%
+list_ = [8, 6, 2, 5]
+temp = 0
+
+
+# list_.append()
+thing = list_.insert(2, 0)
+print(type(thing))
+

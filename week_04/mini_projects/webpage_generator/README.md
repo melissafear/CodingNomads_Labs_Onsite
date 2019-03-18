@@ -17,3 +17,6 @@ project we will write code for an **automatic webpage generator**.
 - Create a git repository for your travel blog and host the generated website online
 - **Challenge**: Style your blog using CSS
 - **Challenge**: Change the script to also include image files from the `raw` folder
+
+
+#TODO
