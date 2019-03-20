@@ -5,3 +5,4 @@ week_01/.idea/
 venv
 >>>>>>> 8ff136c9f1bfecd6180853b49202cb1d71d76b5d
 __pycache__
+secrets.py

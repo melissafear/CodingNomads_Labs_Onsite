@@ -11,3 +11,9 @@ BONUS: Using your script, create a folder and download the main 'front_default'
        Name the files appropriately using the name data from your response.
 
 '''
+import requests
+
+url = "https://pokeapi.co/docs/v2.html#pokemon"
+page = requests.get(url)
+
+print(page.text)
