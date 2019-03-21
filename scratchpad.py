@@ -1,10 +1,12 @@
-#reverse the list
+test =  Table('testtable', metadata
+              Column('id', Integer(), autoincrement=True, primary_keyTrue),
+              Column('quote', String(255), nullable=False),
+              Column('year', Integer()),
 
-list_ = [8, 6, 2, 5]
-temp = 0
+                     )
+query = sqa.insert('testtable', metadata).values(
+    quote = 'fdfdsffdsfdsfsd'
+    year = 2007
 
 
-# list_.append()
-thing = list_.insert(2, 0)
-print(type(thing))
-
+)
