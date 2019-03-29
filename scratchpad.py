@@ -1,12 +1,3 @@
-test =  Table('testtable', metadata
-              Column('id', Integer(), autoincrement=True, primary_keyTrue),
-              Column('quote', String(255), nullable=False),
-              Column('year', Integer()),
-
-                     )
-query = sqa.insert('testtable', metadata).values(
-    quote = 'fdfdsffdsfdsfsd'
-    year = 2007
-
-
-)
+for number in range(1, 10):
+    if number % 2:
+        return print(number)

@@ -17,7 +17,10 @@ Print out every prime number between 1 and 100.
 #                             print(num)
 
 
+'''
+Print out every prime number between 1 and 100.
 
+'''
 for current_num in range(1, 100):
     if current_num > 1:
         for diviser in range (2,current_num):
